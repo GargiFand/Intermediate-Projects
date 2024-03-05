@@ -1,0 +1,50 @@
+{
+  "name": "techeverri",
+  "version": "1.5.0",
+  "description": "Personal card for Tomas Echeverri (@techeverri)",
+  "keywords": [
+    "business card",
+    "card",
+    "npm card",
+    "npm",
+    "npx card",
+    "npx",
+    "techeverri"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Tomas Echeverri",
+    "url": "https://github.com/techeverri"
+  },
+  "files": [
+    "bin/card"
+  ],
+  "type": "module",
+  "main": "./bin/cli.js",
+  "bin": "./bin/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techeverri/techeverri-cli.git"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "test": "jest",
+    "print": "node ./bin/cli.js",
+    "build": "node ./build.js",
+    "postbuild": "npm run print"
+  },
+  "devDependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.0.0",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "jest": "^29.6.1",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
